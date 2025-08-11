@@ -1,0 +1,31 @@
+stadium_name,team,affiliate_id,class,elevation,fair_territory,lf_fh,cf_fh,rf_fh,lf_dist,lc_dist,cf_dist,rc_dist,rf_dist
+American Family Field,Milwaukee Brewers,MIL06,MLB,597,111.2,8,8,8,344,370,400,374,345
+Angel Stadium,Los Angeles Angels,ANA01,MLB,151,106.7,5,8,18,330,387,404,370,330
+Busch Stadium,St. Louis Cardinals,STL10,MLB,460,112.1,8,8,8,336,375,400,375,335
+Chase Field,Arizona Diamondbacks,PHO01,MLB,1086,114.2,8,25,8,330,376,407,376,335
+Citi Field,New York Mets,NYC20,MLB,10,110.6,8,8,8,335,362,408,375,330
+Citizens Bank Park,Philadelphia Phillies,PHI13,MLB,20,105,11,6,13,329,360,401,355,330
+Comerica Park,Detroit Tigers,DET05,MLB,600,113.7,7,9,9,345,370,420,388,330
+Coors Field,Colorado Rockies,DEN02,MLB,5190,119.2,8,8,17,347,390,415,375,350
+Dodger Stadium,Los Angeles Dodgers,LOS03,MLB,515,111.1,4,8,4,330,375,395,375,330
+Fenway Park,Boston Red Sox,BOS07,MLB,21,105.5,37,18,5,310,335,390,378,302
+Globe Life Field,Texas Rangers,ARL03,MLB,545,110.4,8,8,8,329,372,407,374,326
+Great American Ball Park,Cincinnati Reds,CIN09,MLB,535,106.9,12,8,8,328,368,404,370,325
+Guaranteed Rate Field,Chicago White Sox,CHI12,MLB,595,105.3,8,8,8,335,365,400,365,330
+Kauffman Stadium,Kansas City Royals,KAN06,MLB,856,118.5,9,9,9,330,385,410,385,330
+loanDepot park,Miami Marlins,MIA02,MLB,10,114.6,10,15,10,344,386,407,392,335
+Minute Maid Park,Houston Astros,HOU03,MLB,45,107,21,9,7,315,335,436,373,326
+Nationals Park,Washington Nationals,WAS11,MLB,35,109.1,10,12,9,336,377,402,370,335
+Oakland Coliseum,Oakland Athletics,OAK01,MLB,3,108.7,8,8,8,330,362,400,362,330
+Oracle Park,San Francisco Giants,SFO03,MLB,0,110.8,8,8,25,339,365,399,385,309
+Oriole Park at Camden Yards,Baltimore Orioles,BAL12,MLB,33,108.1,7,7,21,333,364,400,373,318
+Petco Park,San Diego Padres,SAN02,MLB,23,110.9,4,7,10,334,380,396,372,322
+PNC Park,Pittsburgh Pirates,PIT08,MLB,780,111.2,6,10,21,325,388,399,365,320
+Progressive Field,Cleveland Guardians,CLE08,MLB,653,105.4,19,9,9,325,360,405,375,325
+Rogers Centre,Toronto Blue Jays,TOR02,MLB,270,109.5,8,8,8,328,375,400,375,328
+Target Field,Minnesota Twins,MIN04,MLB,815,108.9,8,8,23,339,377,404,367,328
+T-Mobile Park,Seattle Mariners,SEA03,MLB,10,106.1,15,7,7,331,367,401,367,326
+Tropicana Field,Tampa Bay Rays,STP01,MLB,15,108.9,11,9,11,315,370,404,370,322
+Truist Park,Atlanta Braves,ATL03,MLB,1001,109.3,6,8,16,335,385,400,375,325
+Wrigley Field,Chicago Cubs,CHI11,MLB,595,107.8,16,11,16,355,352,395,368,353
+Yankee Stadium,New York Yankees,NYC21,MLB,55,108.8,8,8,8,318,382,408,360,314
