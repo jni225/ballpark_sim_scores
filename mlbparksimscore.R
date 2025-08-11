@@ -12,13 +12,15 @@ library(baseballr)
 library(ggtext)
 #setwd("path") #Set path to the location of the mlbparks.csv and milbparks.csv files and the Logos folder
 
-##### IMPORTANT NOTE: This data has been taken from the 2022-2024 MLB seasons. The data taken
-#####   from MLB Gameday refers to these ballparks as what they were called at that time. As an
-#####   example, the Astros' home ballpark is referred to as Minute Maid Park. This also applies
-#####   to teams that are in new ballparks in 2025, such as the Athletics, whose home ballpark
-#####   was still the Oakland Coliseum at that time.
+##### IMPORTANT NOTE: This data has been taken from the 2022-2024 MLB seasons. The data taken from
+#####   MLB Gameday refers to these ballparks as what they were called at that time. As an example,
+#####   the Astros' home ballpark is referred to as Minute Maid Park. This also applies to teams
+#####   that are in new ballparks in 2025, such as the Athletics, whose home ballpark was still the
+#####   Oakland Coliseum at that time. However, the team graphics from the full article use the
+#####   updated stadium or team names that were changed prior to the 2025 season, such as the Cubs'
+#####   AA team being referred to by their new name, the Knoxville Smokies.
 
-#Load data (see GitHu for access to CSV files)
+#Load data (see GitHub for access to CSV files)
 mlbparks <- read.csv("mlb_parks.csv")
 milbparks <- read.csv("milb_parks.csv")
 
@@ -493,4 +495,5 @@ ggsave("team_scatter.png", width = 7, height = 5)
 write.csv(simscore_df, "mlb_simscores.csv", row.names = FALSE)
 write.csv(simscore_teams, "simscore_comp.csv", row.names = FALSE)
 write.csv(affiliate_sim, "affiliate_simscores.csv", row.names = FALSE)
+
 #NOTE: These three data frames are already available on the GitHub Repository under the 'Results' folder
