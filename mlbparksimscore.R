@@ -1,6 +1,7 @@
 ### PROJECT: Ballpark Similarity Scores
 ### AUTHOR: John Incantalupo
 ### COMPLETED: August 10, 2025
+### UPDATED: August 12, 2025
 ### GitHub Repo: https://github.com/jni225/ballpark_sim_scores
 
 #install.packages("tidyverse")
@@ -432,14 +433,14 @@ ggplot(simscore_unique, aes(x = sim_score)) +
            y = 80, vjust = -0.5, color = "#FF0000") + theme_classic()
 ggsave("simscore_hist.png", width = 8, height = 5)
 
-#Sim score heatmap
+#Sim score heatmap (Updated)
 ggplot((simscore_df %>% mutate(across(c(PF_sim, dims_sim, misc_sim, sim_score), ~ na_if(., 0)))),
        aes(x = team1, y = team2, fill = sim_score)) + geom_tile() +
   scale_fill_gradient2(breaks = c(min(simscore_df$sim_score[simscore_df$sim_score > 0]) + 10,
                                   max(simscore_df$sim_score[simscore_df$sim_score > 0]) - 10),
                        labels = c("More Similar", "Less Similar"),
-                       mid = "#FF0000", high = "#FFCC00", na.value = "#FFFFFF",
-                       midpoint = min(simscore_df$sim_score)) + coord_fixed() +
+                       low = "#D73027", mid = "#FFFFFF", high = "#4575B4", na.value = "#000000",
+                       midpoint = mean(simscore_unique$sim_score)) + coord_fixed() +
   guides(fill = guide_colorbar(title = "Similarity Score", ticks = FALSE, reverse = TRUE)) +
   scale_x_discrete(labels = MLBlogos) + scale_y_discrete(labels = MLBlogos) +
   theme(axis.text.x = element_markdown(), axis.text.y = element_markdown(),
@@ -447,19 +448,19 @@ ggplot((simscore_df %>% mutate(across(c(PF_sim, dims_sim, misc_sim, sim_score), 
   labs(title = "2024 MLB Ballpark Similarity Scores")
 ggsave("simscore_heatmap.png", width = 8.5, height = 8.5)
 
-#Heatmap w/o title
+#Heatmap w/o title (Updated)
 ggplot((simscore_df %>% mutate(across(c(PF_sim, dims_sim, misc_sim, sim_score), ~ na_if(., 0)))),
        aes(x = team1, y = team2, fill = sim_score)) + geom_tile() +
   scale_fill_gradient2(breaks = c(min(simscore_df$sim_score[simscore_df$sim_score > 0]) + 10,
                                   max(simscore_df$sim_score[simscore_df$sim_score > 0]) - 10),
                        labels = c("More Similar", "Less Similar"),
-                       mid = "#FF0000", high = "#FFCC00", na.value = "#FFFFFF",
-                       midpoint = min(simscore_df$sim_score)) + coord_fixed() +
+                       low = "#D73027", mid = "#FFFFFF", high = "#4575B4", na.value = "#000000",
+                       midpoint = mean(simscore_unique$sim_score)) + coord_fixed() +
   guides(fill = guide_colorbar(title = "Similarity Score", ticks = FALSE, reverse = TRUE)) +
   scale_x_discrete(labels = MLBlogos) + scale_y_discrete(labels = MLBlogos) +
   theme(axis.text.x = element_markdown(), axis.text.y = element_markdown(),
         axis.title.x = element_blank(), axis.title.y = element_blank())
-ggsave("simscore_heatmap_wo_title.png", width = 8, height = 8)
+ggsave("simscore_heatmap_wo_title.png", width = 8.5, height = 8.5)
 
 #Average affiliate sim score by minor league class
 data.frame(class = factor(c("AAA", "AA", "High-A", "Low-A"),
@@ -497,3 +498,4 @@ write.csv(simscore_teams, "simscore_comp.csv", row.names = FALSE)
 write.csv(affiliate_sim, "affiliate_simscores.csv", row.names = FALSE)
 
 #NOTE: These three data frames are already available on the GitHub Repository under the 'Results' folder
+
